@@ -1,0 +1,7 @@
+{
+    "kendraIndexArns": [
+        "arn:aws:kendra:YOUR_REGION:YOUR_ACCOUNT:index/YOUR_KENDRA_INDEX_ID_1",
+        "arn:aws:kendra:YOUR_REGION:YOUR_ACCOUNT:index/YOUR_KENDRA_INDEX_ID_2"
+    ],
+    "s3DataSourceBuckets": ["YOUR_BUCKET_NAME_1", "YOUR_BUCKET_NAME_2"]
+}

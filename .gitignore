@@ -1,0 +1,14 @@
+*.js
+!jest.config.js
+*.d.ts
+node_modules
+
+# CDK asset staging directory
+.cdk.staging
+cdk.out
+
+# HTTP REST Client Directory
+_requests
+
+# Ignore env-specific context vars (define these locally per app stage)
+cdk.context.json
