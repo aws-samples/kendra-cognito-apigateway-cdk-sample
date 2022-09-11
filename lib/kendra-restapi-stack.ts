@@ -59,8 +59,6 @@ export class KendraRestApiStack extends cdk.Stack {
 
         const cognitoDomainPrefix = this.node.tryGetContext('cognitoDomainPrefix');
 
-        console.log(cognitoDomainPrefix);
-
         this.userPool.addDomain('KendraAPIUserPoolDomain', {
             cognitoDomain: {
                 domainPrefix: cognitoDomainPrefix,
