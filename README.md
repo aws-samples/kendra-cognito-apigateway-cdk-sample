@@ -4,16 +4,26 @@ Amazon Kendra has a robust JSON API for use with the AWS SDK (software developme
 
 This pattern seeks to bridge this gap by providing a detailed overview of the considerations, concepts and steps to build and deploy a full-featured REST API layer that interfaces with Kendra in a secure manner that follows the AWS Well-Architected guidance framework.
 
+### Start by studying and running the tests
+
+This sample repository includes a full test suite that will help you better understand how to spec your own CDK stacks and how to approach testing lambda functions locally. The best way to learn is by example! If you are somewhat new to CDK and Lambda testing, studying the test suites in this repo will save you hours of research, trial and error.
+
+Clone the repo and run `npm install && npm build && npm test` to get started.
+
+Find the stack test in [`test/kendra-restapi.test.ts`](test/kendra-restapi.test.ts)
+
+Find the Lambda test suites alongside the Lambda files in [`lambda`](lambda)
+
 ## Prerequisites
 
 This pattern is intended to provide a REST API interface to an existing Amazon Kendra Index.
 
 To fully implement this pattern you will need:
 
-1. Documents for indexing and searching uploaded to an S3 Bucket
-2. A fully-initialized Kendra Index with the above bucket as a Kendra Data Source
-3. The account containing the Data Source and the Kendra Index requires CDK setup/bootstrapping
-4. A local CDK development environment ready for cdk deploy
+1. **Documents** for indexing and searching uploaded to an **S3 Bucket**
+2. A fully-initialized **Kendra Index** with the above bucket as a **Kendra Data Source**
+3. The account containing the Data Source and the Kendra Index requires **CDK setup/bootstrapping**
+4. A **local CDK development environment** ready for `cdk deploy`
 
 For instructions on setting up an Amazon Kendra Index, see https://docs.aws.amazon.com/kendra/latest/dg/create-index.html
 
@@ -22,9 +32,9 @@ For instructions on bootstrapping your account for CDK, see https://docs.aws.ama
 **Test your Kendra Index for pattern-readiness:**
 
 1. Sign in to the AWS Management Console and open the Amazon Kendra console at https://console.aws.amazon.com/kendra/
-2. Click on Indexes in the left-hand menu
+2. Click on **Indexes** in the left-hand menu
 3. Select the Index you would like to use for this pattern from the list
-4. Click Search Indexed Content in the left-hand menu
+4. Click **Search Indexed Content** in the left-hand menu
 5. In the resulting page, test your Kendra Index by entering a few search queries
 6. If you can successfully obtain results from the instructions above, your Kendra Index is ready to interface with this pattern.
 
@@ -67,11 +77,7 @@ For more information about filtering results based on user context, see: https:/
 
 [refarch]: assets/kendra_REST_API_ref_arch.png 'Kendra REST API Reference Architecture'
 
-## Getting Started
-
-### Clone this repository
-
-`git clone {TBD}`
+## Building the Stack
 
 ### Ensure that your system is ready for CDK Development
 
@@ -95,7 +101,7 @@ Run `cdk synth` to ensure that everything is working correctly.
 
 `cdk deploy`
 
-## Setting Up For Initial Testing
+## Setting Up For Initial Use
 
 1. Create the first user in the deployed Cognito User Pool
 2. Force-confirm the first user and set their password (AWS CLI)
