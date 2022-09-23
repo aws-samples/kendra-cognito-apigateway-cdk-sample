@@ -1,12 +1,12 @@
-# Amazon Kendra REST API CDK Sample
+# Amazon Kendra Web Service CDK Sample
 
 Amazon Kendra has a robust JSON API for use with the AWS SDK (software development kit), but does not expose endpoints for quickly getting up and running with a custom client. The Amazon Kendra documentation has examples that provide some direction in developing a custom client, but there is no public information about the API layer necessary to close the gap and complete the example.
 
-This pattern seeks to bridge this gap by providing a detailed overview of the considerations, concepts and steps to build and deploy a full-featured REST API layer that interfaces with Kendra in a secure manner that follows the AWS Well-Architected guidance framework.
+This pattern seeks to bridge this gap by providing a detailed overview of the considerations, concepts and steps to build and deploy a full-featured Amazon API Gateway layer that interfaces with Amazon Kendra in a secure manner that follows the AWS Well-Architected guidance framework.
 
 ### Start by studying and running the tests
 
-This sample repository includes a full test suite that will help you better understand how to spec your own CDK stacks and how to approach testing lambda functions locally. The best way to learn is by example! If you are somewhat new to CDK and Lambda testing, studying the test suites in this repo will save you hours of research, trial and error.
+This sample repository includes a full test suite that will help you better understand how to spec your own AWS CDK stacks and how to approach testing lambda functions locally. The best way to learn is by example! If you are somewhat new to CDK and AWS Lambda testing, studying the test suites in this repo will save you hours of research, trial and error.
 
 Clone the repo and run `npm install && npm build && npm test` to get started.
 
