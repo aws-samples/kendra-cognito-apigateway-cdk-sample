@@ -55,7 +55,7 @@ For a full list of supported Kendra Data Sources, see https://docs.aws.amazon.co
 
 ### Authentication/Authorization
 
-The AWS Cognito User Pool included in this pattern is setup as a basic example of providing token authorization to the queries REST endpoint to illustrate how to secure the API and prevent unauthenticated requests. The pattern can be extended to include Cognito Identify Pools as Identity Providers to the User Pool for federated access and integrated authentication with existing customer authentication systems. In addition, Kendra can also support the filtering of indexed results based on user-context (ID, role, group, etc). However, integrating a fine-tuned user identity solution for both API authentication and custom filtering of results is beyond the scope of this pattern.
+The AWS Cognito User Pool included in this pattern is setup as a basic example of providing token authorization to the queries REST endpoint to illustrate how to secure the API and prevent unauthenticated requests. The pattern can be extended to include Cognito Identity Pools for federated access and integrated role-based authentication with existing customer systems. In addition, Kendra can also support the filtering of indexed results based on user-context (ID, role, group, etc). However, integrating a fine-tuned user identity solution for both API authentication and custom filtering of results is beyond the scope of this pattern.
 
 For more information about filtering results based on user context, see: https://docs.aws.amazon.com/kendra/latest/dg/user-context-filter.html
 
